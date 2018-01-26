@@ -10,7 +10,10 @@ and open the template in the editor.
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id = "Hitung" class = "spring1.impl.HitungLuaspersegi">
-<!--        <property name = "persegi" valu/>-->
+
     </bean>
+<!--    <bean id = "Lingkaran" class = "spring1.impl.HitungLuaslingkaran">
+
+    </bean>-->
 
 </beans>

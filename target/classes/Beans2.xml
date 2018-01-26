@@ -4,6 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
 <beans xmlns = "http://www.springframework.org/schema/beans"
        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
@@ -12,8 +13,6 @@ and open the template in the editor.
     <bean id = "Hitung" class = "spring1.impl.HitungLuaspersegi">
 
     </bean>
-<!--    <bean id = "Lingkaran" class = "spring1.impl.HitungLuaslingkaran">
-
-    </bean>-->
+   
 
 </beans>

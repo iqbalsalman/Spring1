@@ -9,7 +9,9 @@ package spring1.service;
  *
  * @author iqbal
  */
-public interface HitungVolumeService {
 
-  double hitungLuas(double param);
+  public interface HitungVol {
+    double hitungLuas(double lebar, double tinggi);
+
+    
 }

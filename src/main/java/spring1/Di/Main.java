@@ -7,6 +7,7 @@ package spring1.Di;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import spring1.impl.HitungLuaslingkaran;
 import spring1.impl.HitungLuaspersegi;
 
 /**
@@ -21,5 +22,8 @@ public class Main {
 
     	HitungLuaspersegi cust = (HitungLuaspersegi)context.getBean("Hitung");
     	System.out.println(cust.hitungLuas(500));
+        
+       
+        
       }
 }
