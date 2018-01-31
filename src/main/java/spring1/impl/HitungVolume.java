@@ -5,27 +5,28 @@
  */
 package spring1.impl;
 
+import spring1.service.HitungService;
 import spring1.service.HitungVol;
-import spring1.service.HitungVolumeService;
 
 /**
  *
  * @author iqbal
  */
+
 public  class HitungVolume implements HitungVol {
-    
-private HitungVolumeService lingkaran;
+      private HitungService lingkaran;
 
     @Override
-    public double hitungLuas(double lebar, double tinggi) {
+    public double hitungLuas(int lebar, int tinggi) {
         return lingkaran.hitungLuas(lebar)*tinggi;
     }
-    public void setLingkaran(HitungVolumeService lingkaran){
+    public void setLingkaran(HitungService lingkaran){
         this.lingkaran = lingkaran;
     }
     
-    public void oke(){
-        System.out.println("Saya oke");
+    public void okey(){
+        int i=5;
+          double luas = i*1000000000;
+          System.out.println("Luasnya adalah"+luas);
     }
-        
 }

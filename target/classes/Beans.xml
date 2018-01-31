@@ -9,11 +9,8 @@ and open the template in the editor.
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "Hitung" class = "spring1.impl.HitungLuaspersegi">
+    <bean id = "lingkaran" class = "spring1.impl.HitungLuaspersegi">
 
     </bean>
-<!--    <bean id = "Lingkaran" class = "spring1.impl.HitungLuaslingkaran">
-
-    </bean>-->
 
 </beans>

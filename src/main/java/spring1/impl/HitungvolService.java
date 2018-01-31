@@ -3,14 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package spring1.service;
+package spring1.impl;
+
+import spring1.service.HitungVolumeService;
 
 /**
  *
  * @author iqbal
  */
-public interface HitungService {
+public class HitungvolService implements HitungVolumeService{
+
+    @Override
+    public double hitungLuas(int param) {
+        return 0.0;
     
-    double hitungLuas(int parm);
+    }
     
 }

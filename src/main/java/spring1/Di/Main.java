@@ -6,8 +6,8 @@
 package spring1.Di;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import spring1.impl.HitungLuaslingkaran;
 import spring1.impl.HitungLuaspersegi;
 
 /**
@@ -16,14 +16,16 @@ import spring1.impl.HitungLuaspersegi;
  */
 public class Main {
     
-      public static void main(String[] args){
-      ApplicationContext context =
-    	  new ClassPathXmlApplicationContext(new String[] {"Beans.xml"});
+    public static void main(String[] args) {
+//      ApplicationContext context =
+//    	  new AnnotationConfigApplicationContext(HitungLuaspersegi.class);
+//
+//    	HitungLuaspersegi cust = (HitungLuaspersegi)context.getBean(HitungLuaspersegi.class);
+//    	System.out.println(cust.hitungLuas(100));
 
-    	HitungLuaspersegi cust = (HitungLuaspersegi)context.getBean("Hitung");
-    	System.out.println(cust.hitungLuas(500));
+        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+        HitungLuaspersegi cust = (HitungLuaspersegi) context.getBean("lingkaran");
+        System.out.println(cust.hitungLuas(100));
         
-       
-        
-      }
+    }
 }

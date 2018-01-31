@@ -11,7 +11,9 @@ package spring1.service;
  */
 
   public interface HitungVol {
-    double hitungLuas(double lebar, double tinggi);
+   
+   double hitungLuas(int lebar, int tinggi);
+
 
     
 }

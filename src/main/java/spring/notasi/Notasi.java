@@ -9,6 +9,7 @@ import org.springframework.context.annotation.*;
 import spring1.impl.HitungVolume;
 
 
+
 /**
  *
  * @author iqbal
@@ -19,5 +20,7 @@ public class Notasi {
    public HitungVolume hitungvolume(){
       return new HitungVolume();
    }
+//   @property
+   
    
 }

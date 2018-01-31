@@ -5,10 +5,9 @@
  */
 package spring1.Di;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring.notasi.Notasi;
-import spring1.impl.HitungVolume;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
 import spring1.service.HitungVol;
 
 /**
@@ -17,10 +16,15 @@ import spring1.service.HitungVol;
  */
 public class MainVolume {
     public static void main(String[] args) {
-      ApplicationContext context = 
-         new AnnotationConfigApplicationContext(Notasi.class);
-       	HitungVolume te = (HitungVolume)context.getBean("hitungvolume");
-        te.oke();
-//       System.out.println(te.hitungLuas(10, 45));
-    }
+//       ApplicationContext ctx = 
+//         new AnnotationConfigApplicationContext(Notasi.class);
+//
+//      HitungVol te = ctx.getBean(HitungVol.class);
+//        System.out.println(te.hitungLuas(10, 45));
+        
+//        te.okey();
+   XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("appconfig2.xml"));
+        HitungVol d1 = (HitungVol)factory.getBean("hitungVol");
+        System.out.println(d1.hitungLuas(10, 100));
+   } 
 }

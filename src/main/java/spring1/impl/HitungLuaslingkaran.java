@@ -13,7 +13,6 @@ import spring1.service.HitungService;
  */
 public class HitungLuaslingkaran implements HitungService {
 
-    @Override
     public double hitungLuas(int parm) {
        return Math.PI*parm*parm;
     }

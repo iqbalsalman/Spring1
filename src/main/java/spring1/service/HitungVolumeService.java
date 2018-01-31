@@ -11,5 +11,7 @@ package spring1.service;
  */
 public interface HitungVolumeService {
 
-  double hitungLuas(double param);
+      double hitungLuas(int param);
+
+    
 }
